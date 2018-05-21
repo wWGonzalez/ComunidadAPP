@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import umg.community.app.com.communityumg.Fragments.About;
 import umg.community.app.com.communityumg.Fragments.Favorites;
@@ -23,6 +25,8 @@ import umg.community.app.com.communityumg.Fragments.Settings;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, Home.OnFragmentInteractionListener,
         Favorites.OnFragmentInteractionListener, Settings.OnFragmentInteractionListener, About.OnFragmentInteractionListener {
+
+    LinearLayout linearLayout1;
 
 
     @Override
@@ -53,7 +57,32 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+        Toast.makeText(this,"Bienvenidos",Toast.LENGTH_SHORT).show();
+
+        linearLayout1 = findViewById(R.id.linear_semestre1);
+
+        setLiner1(linearLayout1);
+
+
     }
+
+
+    //Establece evento para Liner 1
+    private  void setLiner1(LinearLayout liner){
+        // LinearLayout menu_photos = (LinearLayout )findViewById(R.id.linear_semestre1);
+        liner.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                hola();
+
+            }
+        });
+    }
+
+    private void hola(){
+        Toast.makeText(this,"Hola",Toast.LENGTH_SHORT).show();
+    }
+
 
     @Override
     public void onBackPressed() {

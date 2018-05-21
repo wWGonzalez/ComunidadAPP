@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import umg.community.app.com.communityumg.R;
 
 
@@ -22,7 +26,7 @@ import umg.community.app.com.communityumg.R;
  * Use the {@link Home#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Home extends Fragment{
+public class Home extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,6 +35,9 @@ public class Home extends Fragment{
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    LinearLayout linearLayout1;
+
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -55,6 +62,7 @@ public class Home extends Fragment{
         fragment.setArguments(args);
         return fragment;
     }
+    b nuevo = new b();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,7 +73,18 @@ public class Home extends Fragment{
         }
 
 
+
+       // nuevo.hola();
+
+
+
+
+
+
+
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -130,4 +149,18 @@ public class Home extends Fragment{
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    //Clase para botones
+    public class b extends AppCompatActivity{
+
+
+        public void hola(){
+            Toast.makeText(this, "Bienvenidos",Toast.LENGTH_LONG).show();
+        }
+
+
+    }
+
+
+
 }
