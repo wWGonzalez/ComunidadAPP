@@ -9,7 +9,13 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="459dp"
         android:text="CURSOS DEL PRIMER SEMESTRE" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar" />
 
 </LinearLayout>
