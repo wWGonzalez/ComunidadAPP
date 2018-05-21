@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
 
-<<<<<<< HEAD
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -20,6 +20,5 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"></LinearLayout>
 
-=======
->>>>>>> 844d35884da32cc67b79f61b64fb8bf4d1a19a4a
+
 </LinearLayout>
