@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import umg.community.app.com.communityumg.MainActivity;
 import umg.community.app.com.communityumg.R;
+import umg.community.app.com.communityumg.interfaces.Main2Activity;
 
 public class Login extends AppCompatActivity{
 
@@ -23,8 +24,8 @@ public class Login extends AppCompatActivity{
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent home = new Intent(Login.this, MainActivity.class);
-                startActivity(home);
+                Intent M = new Intent(Login.this, Main2Activity.class);
+                startActivity(M);
                 finish();
             }
         });
