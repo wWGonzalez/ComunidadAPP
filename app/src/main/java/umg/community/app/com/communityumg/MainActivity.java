@@ -117,12 +117,16 @@ public class MainActivity extends AppCompatActivity
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
+
+
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Fragment new_frag=null;
         boolean frag_selected=false;
+        /*
         if (id == R.id.nav_home) {
             new_frag=new Home();
             frag_selected=true;
@@ -138,6 +142,7 @@ public class MainActivity extends AppCompatActivity
             new_frag=new About();
             frag_selected=true;
         }
+        */
 
         if(frag_selected==true){
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main, new_frag).commit();
@@ -152,4 +157,5 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
 }

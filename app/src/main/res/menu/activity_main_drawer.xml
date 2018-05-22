@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_home"
-            android:title="@string/nav_title_home" />
+    <item android:id="@+id/action_alertas"
+        android:title="@string/registro_de_alertas"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
-        <item
-            android:id="@+id/nav_favorites"
-            android:icon="@drawable/ic_menu_favorites"
-            android:title="@string/nav_title_favorites" />
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_settings"
-            android:title="@string/action_settings" />
-        <item
-            android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_logout"
-            android:title="@string/nav_title_logout" />
-    </group>
+    <item android:id="@+id/action_pagina_web"
+        android:title="@string/pagina_web"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
-    <item android:title="Sobre Nosotros">
-        <menu>
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_menu_about"
-                android:title="@string/nav_title_about" />
+    <item android:id="@+id/action_historia"
+        android:title="@string/historia"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
-        </menu>
-    </item>
+    <item android:id="@+id/action_quienes_somos"
+        android:title="@string/quienes_somos"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
+    <item android:id="@+id/action_desarrolladores"
+        android:title="@string/desarrolladores"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_cambiar_idioma"
+        android:title="@string/idioma"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_salir"
+        android:title="@string/salir"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
 </menu>
