@@ -29,7 +29,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".interfaces.Main2Activity" />
-        <activity android:name=".interfaces.about2"></activity>
+        <activity android:name=".interfaces.about2" />
+        <activity android:name=".activity_semestre1"></activity>
     </application>
 
 </manifest>
