@@ -26,4 +26,7 @@ public class about2 extends AppCompatActivity {
 
 
 
+
+
+
 }
